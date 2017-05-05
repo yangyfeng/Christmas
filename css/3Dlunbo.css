@@ -1,0 +1,34 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+.carousel{
+	position: absolute;
+	left: 10rem;
+	top: 5rem;
+	width: 10rem;
+	height: 10rem;
+	perspective: 25rem;
+}
+.carousel .wrap{
+	transform-style: preserve-3d;
+	transition: all 1s;	
+}
+.carousel .wrap .item{		
+	position: absolute;
+	left: 0;
+	top: 0;	
+}
+.carousel .wrap .item:nth-child(1){
+	transform: rotateY(0deg) translateZ(10rem);
+}
+.carousel .wrap .item:nth-child(2){
+	transform: rotateY(120deg) translateZ(10rem);
+}
+.carousel .wrap .item:nth-child(3){
+	transform: rotateY(240deg) translateZ(10rem);
+}
+.carousel .wrap .item img{
+	width: 100%;
+	height: 100%;
+}
